@@ -1,0 +1,13 @@
+C:\Dosyalarım\E-Ticaret\src\API.Data\bin\Debug\netcoreapp3.1\API.Data.deps.json
+C:\Dosyalarım\E-Ticaret\src\API.Data\bin\Debug\netcoreapp3.1\API.Data.dll
+C:\Dosyalarım\E-Ticaret\src\API.Data\bin\Debug\netcoreapp3.1\API.Data.pdb
+C:\Dosyalarım\E-Ticaret\src\API.Data\obj\Debug\netcoreapp3.1\API.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dosyalarım\E-Ticaret\src\API.Data\obj\Debug\netcoreapp3.1\API.Data.AssemblyInfoInputs.cache
+C:\Dosyalarım\E-Ticaret\src\API.Data\obj\Debug\netcoreapp3.1\API.Data.AssemblyInfo.cs
+C:\Dosyalarım\E-Ticaret\src\API.Data\obj\Debug\netcoreapp3.1\API.Data.csproj.CoreCompileInputs.cache
+C:\Dosyalarım\E-Ticaret\src\API.Data\obj\Debug\netcoreapp3.1\API.Data.dll
+C:\Dosyalarım\E-Ticaret\src\API.Data\obj\Debug\netcoreapp3.1\API.Data.pdb
+C:\Dosyalarım\E-Ticaret\src\API.Data\bin\Debug\netcoreapp3.1\API.Data.runtimeconfig.json
+C:\Dosyalarım\E-Ticaret\src\API.Data\bin\Debug\netcoreapp3.1\API.Data.runtimeconfig.dev.json
+C:\Dosyalarım\E-Ticaret\src\API.Data\obj\Debug\netcoreapp3.1\API.Data.genruntimeconfig.cache
+C:\Dosyalarım\E-Ticaret\src\API.Data\obj\Debug\netcoreapp3.1\API.Data.csproj.AssemblyReference.cache

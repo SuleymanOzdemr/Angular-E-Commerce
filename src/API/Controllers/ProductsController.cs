@@ -1,8 +1,6 @@
-﻿using API.Data.DataContext;
-using API.Data.DbModels;
-using Microsoft.AspNetCore.Http;
+﻿using API.Core.DbModels;
+using API.Infrastructure.DataContext;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -24,11 +22,11 @@ namespace API.Controllers
             var data = _context.Products.ToList();
             return data;
         }
-
+        //note
         [HttpGet("{id}")]
-        public string GetProduct(int id)
+        public async Task<ActionResult<Product>> GetProduct(int id)
         {
-            return "tek urun";
+            return await _context.Products.FindAsync(id);
         }
 
     }

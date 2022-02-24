@@ -1,0 +1,9 @@
+C:\Dosyalarım\E-Ticaret\src\API.Core\bin\Debug\netcoreapp3.1\API.Core.deps.json
+C:\Dosyalarım\E-Ticaret\src\API.Core\bin\Debug\netcoreapp3.1\API.Core.dll
+C:\Dosyalarım\E-Ticaret\src\API.Core\bin\Debug\netcoreapp3.1\API.Core.pdb
+C:\Dosyalarım\E-Ticaret\src\API.Core\obj\Debug\netcoreapp3.1\API.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dosyalarım\E-Ticaret\src\API.Core\obj\Debug\netcoreapp3.1\API.Core.AssemblyInfoInputs.cache
+C:\Dosyalarım\E-Ticaret\src\API.Core\obj\Debug\netcoreapp3.1\API.Core.AssemblyInfo.cs
+C:\Dosyalarım\E-Ticaret\src\API.Core\obj\Debug\netcoreapp3.1\API.Core.csproj.CoreCompileInputs.cache
+C:\Dosyalarım\E-Ticaret\src\API.Core\obj\Debug\netcoreapp3.1\API.Core.dll
+C:\Dosyalarım\E-Ticaret\src\API.Core\obj\Debug\netcoreapp3.1\API.Core.pdb

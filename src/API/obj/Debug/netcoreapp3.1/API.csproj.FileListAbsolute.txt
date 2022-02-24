@@ -50,8 +50,11 @@ C:\Dosyalarım\E-Ticaret\src\API\bin\Debug\netcoreapp3.1\runtimes\win-x86\native
 C:\Dosyalarım\E-Ticaret\src\API\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Dosyalarım\E-Ticaret\src\API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Dosyalarım\E-Ticaret\src\API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Dosyalarım\E-Ticaret\src\API\bin\Debug\netcoreapp3.1\API.Data.dll
-C:\Dosyalarım\E-Ticaret\src\API\bin\Debug\netcoreapp3.1\API.Data.pdb
 C:\Dosyalarım\E-Ticaret\src\API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Dosyalarım\E-Ticaret\src\API\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 C:\Dosyalarım\E-Ticaret\src\API\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Dosyalarım\E-Ticaret\src\API\obj\Debug\netcoreapp3.1\API.csproj.CopyComplete
+C:\Dosyalarım\E-Ticaret\src\API\bin\Debug\netcoreapp3.1\API.Core.dll
+C:\Dosyalarım\E-Ticaret\src\API\bin\Debug\netcoreapp3.1\API.Infrastructure.dll
+C:\Dosyalarım\E-Ticaret\src\API\bin\Debug\netcoreapp3.1\API.Infrastructure.pdb
+C:\Dosyalarım\E-Ticaret\src\API\bin\Debug\netcoreapp3.1\API.Core.pdb

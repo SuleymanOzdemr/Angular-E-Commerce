@@ -2,11 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\API",
     "\\src\\API.Data",
     "\\src\\API.Data\\DataContext",
     "\\src\\API.Data\\DbModels",
-    "\\src\\API.Data\\Migrations"
+    "\\src\\API.Data\\Migrations",
+    "\\src\\API\\Controllers"
   ],
-  "SelectedNode": "\\src\\API.Data\\DbModels\\Product.cs",
+  "SelectedNode": "\\src\\src.sln",
   "PreviewInSolutionExplorer": false
 }

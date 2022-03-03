@@ -53,8 +53,8 @@ C:\Dosyalarım\E-Ticaret\src\API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netsta
 C:\Dosyalarım\E-Ticaret\src\API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Dosyalarım\E-Ticaret\src\API\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 C:\Dosyalarım\E-Ticaret\src\API\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
-C:\Dosyalarım\E-Ticaret\src\API\obj\Debug\netcoreapp3.1\API.csproj.CopyComplete
 C:\Dosyalarım\E-Ticaret\src\API\bin\Debug\netcoreapp3.1\API.Core.dll
 C:\Dosyalarım\E-Ticaret\src\API\bin\Debug\netcoreapp3.1\API.Infrastructure.dll
 C:\Dosyalarım\E-Ticaret\src\API\bin\Debug\netcoreapp3.1\API.Infrastructure.pdb
 C:\Dosyalarım\E-Ticaret\src\API\bin\Debug\netcoreapp3.1\API.Core.pdb
+C:\Dosyalarım\E-Ticaret\src\API\obj\Debug\netcoreapp3.1\API.csproj.CopyComplete

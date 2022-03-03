@@ -5,7 +5,6 @@
     "\\src\\API",
     "\\src\\API.Data",
     "\\src\\API.Data\\DataContext",
-    "\\src\\API.Data\\DbModels",
     "\\src\\API.Data\\Migrations",
     "\\src\\API\\Controllers"
   ],

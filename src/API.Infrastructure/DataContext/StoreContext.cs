@@ -1,5 +1,7 @@
 ﻿using API.Core.DbModels;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace API.Infrastructure.DataContext
 {
@@ -10,5 +12,7 @@ namespace API.Infrastructure.DataContext
             
         }
         public DbSet<Product> Products { get; set; }
+        public DbSet<ProductType> ProductTypes { get;  set; }
+        public DbSet<ProductBrand> ProductBrand { get;  set; }
     }
 }

@@ -6,8 +6,10 @@
     "\\src\\API.Data",
     "\\src\\API.Data\\DataContext",
     "\\src\\API.Data\\Migrations",
+    "\\src\\API.Infrastructure",
+    "\\src\\API.Infrastructure\\Implements",
     "\\src\\API\\Controllers"
   ],
-  "SelectedNode": "\\src\\src.sln",
+  "SelectedNode": "\\src\\API.Infrastructure\\Implements\\ProductRepository.cs",
   "PreviewInSolutionExplorer": false
 }

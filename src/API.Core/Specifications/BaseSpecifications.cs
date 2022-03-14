@@ -7,6 +7,10 @@ namespace API.Core.Specifications
 {
     public class BaseSpecifications<T> : ISpecifications<T>
     {
+        public BaseSpecifications()
+        {
+
+        }
         public BaseSpecifications(Expression<Func<T,bool>> criteria)
         {
             Criteria = criteria;
@@ -19,7 +23,6 @@ namespace API.Core.Specifications
         {
             Includes.Add(includeExpression);
         }
-    
     
     }
     

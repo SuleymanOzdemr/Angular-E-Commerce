@@ -3,13 +3,14 @@
     "",
     "\\src",
     "\\src\\API",
+    "\\src\\API.Core",
+    "\\src\\API.Core\\Specifications",
     "\\src\\API.Data",
-    "\\src\\API.Data\\DataContext",
     "\\src\\API.Data\\Migrations",
     "\\src\\API.Infrastructure",
     "\\src\\API.Infrastructure\\Implements",
     "\\src\\API\\Controllers"
   ],
-  "SelectedNode": "\\src\\API.Infrastructure\\Implements\\ProductRepository.cs",
+  "SelectedNode": "\\src\\API.Core\\Specifications\\BaseSpecifications.cs",
   "PreviewInSolutionExplorer": false
 }

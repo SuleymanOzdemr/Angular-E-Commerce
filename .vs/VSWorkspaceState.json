@@ -9,8 +9,9 @@
     "\\src\\API.Data\\Migrations",
     "\\src\\API.Infrastructure",
     "\\src\\API.Infrastructure\\Implements",
-    "\\src\\API\\Controllers"
+    "\\src\\API\\Controllers",
+    "\\src\\API\\Dtos"
   ],
-  "SelectedNode": "\\src\\src.sln",
+  "SelectedNode": "\\src\\API\\Dtos\\ProductToReturnDto.cs",
   "PreviewInSolutionExplorer": false
 }

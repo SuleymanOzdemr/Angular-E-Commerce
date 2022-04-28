@@ -9,6 +9,9 @@ namespace API.Core.Specifications
     {
         public ProductsWithProductTypeAndBrandsSpecification(ProductSpecParams productSpecParams)
          :base(x =>
+
+         (string.IsNullOrWhiteSpace(productSpecParams.Search) || x.Name.ToLower().Contains(productSpecParams.Search))
+         &&
          (!productSpecParams.BrandId.HasValue || x.ProductBrandId == productSpecParams.BrandId)
          &&
          (!productSpecParams.TypeId.HasValue || x.ProductTypeId == productSpecParams.TypeId)
@@ -18,7 +21,7 @@ namespace API.Core.Specifications
 
             AddInclude(x => x.ProductBrand);
             AddInclude(x => x.ProductType);
-            // AddOrderBy(x => x.Name);
+             AddOrderBy(x => x.Name);
 
             ApplyPaging(productSpecParams.PageSize * (productSpecParams.PageIndex - 1),productSpecParams.PageSize);
 

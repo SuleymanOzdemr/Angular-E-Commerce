@@ -3,15 +3,8 @@
     "",
     "\\src",
     "\\src\\API",
-    "\\src\\API.Core",
-    "\\src\\API.Core\\Specifications",
-    "\\src\\API.Data",
-    "\\src\\API.Data\\Migrations",
-    "\\src\\API.Infrastructure",
-    "\\src\\API.Infrastructure\\Implements",
-    "\\src\\API\\Controllers",
-    "\\src\\API\\Dtos"
+    "\\src\\API\\Controllers"
   ],
-  "SelectedNode": "\\src\\API\\Dtos\\ProductToReturnDto.cs",
+  "SelectedNode": "\\src\\src.sln",
   "PreviewInSolutionExplorer": false
 }

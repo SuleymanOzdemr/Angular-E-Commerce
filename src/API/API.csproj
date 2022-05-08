@@ -20,5 +20,17 @@
     <ProjectReference Include="..\API.Infrastructure\API.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\images\products\ayicik.jpg" />
+    <None Include="wwwroot\images\products\bebekbezi.png" />
+    <None Include="wwwroot\images\products\disfircasi.jpg" />
+    <None Include="wwwroot\images\products\orange.jpg" />
+    <None Include="wwwroot\images\products\pencil.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Content\" />
+  </ItemGroup>
+
 
 </Project>

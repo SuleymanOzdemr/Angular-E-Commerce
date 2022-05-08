@@ -56,6 +56,7 @@ namespace API
             app.UseMiddleware<ExceptionMiddleware>();
 
             app.UseStatusCodePagesWithReExecute("/Error/{0}");
+            app.UseStaticFiles();
             app.UseHttpsRedirection();
 
             app.UseRouting();

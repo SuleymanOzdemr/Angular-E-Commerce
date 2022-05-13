@@ -16,6 +16,8 @@ export class ShopComponent implements OnInit {
   brands: IBrand[]=[];
   types: IType[]=[];
   shopParams = new ShopParams();
+  totalCount! : number;
+
   sortOptions  = [
     {name:'Alfabetik olarak', value:'name'},
     {name:'Deger : dusukten yuksege', value:'priceAsc'},
@@ -34,6 +36,11 @@ export class ShopComponent implements OnInit {
 getProducts(){
   this.shopservice.getProducts(this.shopParams).subscribe(response =>{
     this.products = response!.data;
+    this.shopParams.pageNumber = response?.pageIndex!;
+    this.shopParams.pageSize = response?.pageSize!;
+    this.totalCount = response?.count!;
+    console.log(this.products);
+    console.log(response);
 },err =>{
   console.log(err)
 });

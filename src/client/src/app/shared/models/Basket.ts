@@ -19,11 +19,11 @@
             items: IBasketItem[] = [];
         
             }
-            
+
             export interface IBasketTotals{
-                shipping: number;
-                subTotal : number;
-                total : number;
+                shipping: number; //transfer yapılacak olan miktar
+                subTotal : number; // genel toplam 
+                total : number;  // genel toplam
             }
         
 

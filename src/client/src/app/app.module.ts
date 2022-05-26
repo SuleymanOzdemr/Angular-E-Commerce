@@ -9,6 +9,7 @@ import { ShopModule } from './shop/shop.module';
 import { HomeModule } from './home/home.module';
 import { CommonModule } from '@angular/common';
 import { BasketModule } from './basket/basket.module';
+import { CheckoutModule } from './checkout/checkout.module';
 
 
 
@@ -26,6 +27,7 @@ import { BasketModule } from './basket/basket.module';
     CoreModule,
     ShopModule,
     HomeModule,
+    
     
 
   ],

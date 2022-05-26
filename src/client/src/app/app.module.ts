@@ -7,20 +7,27 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CoreModule } from './core/core.module';
 import { ShopModule } from './shop/shop.module';
 import { HomeModule } from './home/home.module';
+import { CommonModule } from '@angular/common';
+import { BasketModule } from './basket/basket.module';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
+    CommonModule,
+    BasketModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
     CoreModule,
     ShopModule,
-    HomeModule
+    HomeModule,
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

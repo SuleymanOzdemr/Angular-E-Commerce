@@ -1,18 +1,14 @@
 
+using API.Extensions;
+using API.Helpers;
+using API.Infrastructure.DataContext;
+using API.Middleware;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using API.Infrastructure.DataContext;
-using API.Core.Interfaces;
-using API.Infrastructure.Implements;
-using AutoMapper;
-using API.Helpers;
-using API.Middleware;
-using Microsoft.OpenApi.Models;
-using API.Extensions;
 using StackExchange.Redis;
 
 namespace API
@@ -41,6 +37,7 @@ namespace API
             });
 
             services.AddApplicationServices();
+            services.AddIdentityServices(Configuration);
             services.AddSwaggerDocumentation();
             services.AddCors(opt =>
             {
@@ -69,6 +66,7 @@ namespace API
 
             app.UseRouting();
             app.UseCors("CorsPolicy");
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseSwaggerDocumention();

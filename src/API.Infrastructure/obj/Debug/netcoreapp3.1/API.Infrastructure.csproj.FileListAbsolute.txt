@@ -10,4 +10,7 @@ C:\Dosyalarım\E-Ticaret\src\API.Infrastructure\bin\Debug\netcoreapp3.1\API.Core
 C:\Dosyalarım\E-Ticaret\src\API.Infrastructure\bin\Debug\netcoreapp3.1\API.Core.pdb
 C:\Dosyalarım\E-Ticaret\src\API.Infrastructure\obj\Debug\netcoreapp3.1\API.Infrastructure.dll
 C:\Dosyalarım\E-Ticaret\src\API.Infrastructure\obj\Debug\netcoreapp3.1\API.Infrastructure.pdb
+C:\Dosyalarım\E-Ticaret\src\API.Infrastructure\bin\Debug\netcoreapp3.1\API.Infrastructure.runtimeconfig.json
+C:\Dosyalarım\E-Ticaret\src\API.Infrastructure\bin\Debug\netcoreapp3.1\API.Infrastructure.runtimeconfig.dev.json
+C:\Dosyalarım\E-Ticaret\src\API.Infrastructure\obj\Debug\netcoreapp3.1\API.Infrastructure.genruntimeconfig.cache
 C:\Dosyalarım\E-Ticaret\src\API.Infrastructure\obj\Debug\netcoreapp3.1\API.Infrastructure.csproj.CopyComplete

@@ -1,5 +1,6 @@
 ﻿using API.Core.DbModels;
 using API.Core.Interfaces;
+using API.Dtos;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -26,7 +27,7 @@ namespace API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<CustomerBasket>> UpdateBasket(CustomerBasket basket)
+        public async Task<ActionResult<CustomerBasket>> UpdateBasket(CustomerBasketDto basket)
         {
             if (basket.Id == null)
             {
@@ -34,7 +35,7 @@ namespace API.Controllers
                 basket.Id = newGuidValue.ToString();
             }
 
-            var customerBasket = _mapper.Map<CustomerBasket, CustomerBasket>(basket);
+            var customerBasket = _mapper.Map<CustomerBasketDto, CustomerBasket>(basket);
             var updatedBasket = await _basketRepository.UpdateBasketAsync(customerBasket);
             return Ok(updatedBasket);
         }

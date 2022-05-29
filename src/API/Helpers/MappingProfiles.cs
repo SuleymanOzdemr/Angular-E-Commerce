@@ -1,11 +1,6 @@
 ﻿using API.Core.DbModels;
 using API.Dtos;
 using AutoMapper;
-using StackExchange.Redis;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace API.Helpers
 {
@@ -19,9 +14,10 @@ namespace API.Helpers
                 .ForMember(x => x.PictureUrl, o => o.MapFrom<ProductUrlResolver>());
 
             CreateMap<Core.DbModels.Identity.Address, AddressDto>().ReverseMap();
-          /*  CreateMap<CustomerBasketDto, CustomerBasket>();
+            CreateMap<CustomerBasketDto, CustomerBasket>();
             CreateMap<BasketItemDto, BasketItem>();
-            CreateMap<AddressDto, Core.DbModels.OrderAggregate.Address>().ReverseMap();
+
+            /*CreateMap<AddressDto, Core.DbModels.OrderAggregate.Address>().ReverseMap();
 
             CreateMap<Order, OrderToReturnDto>()
                 .ForMember(d => d.DeliveryMethod, o => o.MapFrom(s => s.DeliveryMethod.ShortName))

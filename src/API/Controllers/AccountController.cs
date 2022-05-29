@@ -2,6 +2,7 @@
 using API.Core.Interfaces;
 using API.Dtos;
 using API.Errors;
+using API.Extensions;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -80,9 +81,7 @@ namespace API.Controllers
         [HttpGet]
         public async Task<ActionResult<UserDto>> GetCurrentUser()
         {
-            var email = HttpContext.User?.Claims?.FirstOrDefault(x => x.Type == ClaimTypes.Email)?.Value;
-
-            var user = await _userManager.FindByEmailAsync(email);
+            var user = await _userManager.FindByUserByClaimsPrincipleWithAddressAsync(HttpContext.User);
 
             return new UserDto
             {
@@ -100,28 +99,26 @@ namespace API.Controllers
 
         [Authorize]
         [HttpGet("address")]
-        public async Task<ActionResult<Address>> GetUserAddress()
+        public async Task<ActionResult<AddressDto>> GetUserAddress()
         {
-            var email = HttpContext.User?.Claims?.FirstOrDefault(x => x.Type == ClaimTypes.Email)?.Value;
+            var user = await _userManager.FindByUserByClaimsPrincipleWithAddressAsync(HttpContext.User);
 
-            var user = await _userManager.FindByEmailAsync(email);
-
-            return user.Adress;
+            return _mapper.Map<Address, AddressDto>(user.Adress);
         }
 
 
-        //[Authorize]
-        //[HttpPut("address")]
-        //public async Task<ActionResult<AddressDto>> UpdateUserAdress(AddressDto address)
-        //{
-        //    var user = await _userManager.FindByUserByClaimsPrincipleWithAddressAsync(HttpContext.User);
+        [Authorize]
+        [HttpPut("address")]
+        public async Task<ActionResult<AddressDto>> UpdateUserAdress(AddressDto address)
+        {
+            var user = await _userManager.FindByUserByClaimsPrincipleWithAddressAsync(HttpContext.User);
 
-        //    user.Address = _mapper.Map<AddressDto, Address>(address);
-        //    var result = await _userManager.UpdateAsync(user);
-        //    if (result.Succeeded)
-        //        return Ok(_mapper.Map<Address, AddressDto>(user.Address));
-        //    return BadRequest("Update Error occurred");
+            user.Adress = _mapper.Map<AddressDto, Address>(address);
+            var result = await _userManager.UpdateAsync(user);
+            if (result.Succeeded)
+                return Ok(_mapper.Map<Address, AddressDto>(user.Adress));
+            return BadRequest("Guncelleme hatasi olustu");
 
-        //}
+        }
     }
 }

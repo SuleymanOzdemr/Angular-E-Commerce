@@ -35,6 +35,13 @@ import { ShopComponent } from './shop/shop.component';
         import('./checkout/checkout.module').then((mod) => mod.CheckoutModule),
       data: { breadcrumb: 'Checkout' },
     },
+    {
+      path: 'account',
+      loadChildren: () =>
+        import('./account/account.module').then((mod) => mod.AccountModule),
+      data: { breadcrumb: 'Account' },
+    },
+ 
  
 
   //tüm componentler için gerçekleştir (redirecTo) 

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { OrderDetailsComponent } from './order-details/order-details.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -12,13 +13,15 @@ import { OrderDetailsComponent } from './order-details/order-details.component';
   imports: [
     CommonModule,
     PaginationModule.forRoot(),
-     CarouselModule.forRoot()
+     CarouselModule.forRoot(),
+     ReactiveFormsModule
     
   ],
   exports:[
     PaginationModule,
     CarouselModule,
-    OrderDetailsComponent
+    OrderDetailsComponent,
+    ReactiveFormsModule
   ]
 })
 export class SharedModule { }

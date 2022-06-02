@@ -4,6 +4,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { OrderDetailsComponent } from './order-details/order-details.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     PaginationModule.forRoot(),
      CarouselModule.forRoot(),
+     BsDropdownModule.forRoot(),
      ReactiveFormsModule
     
   ],
@@ -21,7 +23,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     PaginationModule,
     CarouselModule,
     OrderDetailsComponent,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BsDropdownModule,
+    
   ]
 })
 export class SharedModule { }

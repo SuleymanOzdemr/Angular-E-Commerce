@@ -6,6 +6,7 @@ import { SectionHeaderComponent } from './section-header/section-header.componen
 import { BasketModule } from '../basket/basket.module';
 import { BasketComponent } from '../basket/basket.component';
 import { BrowserModule } from '@angular/platform-browser';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -15,7 +16,8 @@ import { BrowserModule } from '@angular/platform-browser';
   imports: [
     CommonModule,
     RouterModule,
-    BrowserModule
+    BrowserModule,
+    SharedModule
     
   ],
   exports : [NavBarComponent,SectionHeaderComponent]

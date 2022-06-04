@@ -18,5 +18,6 @@ namespace API.Core.Interfaces
         void Add(T entity);
         void Update(T entity);
         void Delete(T entity);
+        Task GetByIdAsync(object id);
     }
 }

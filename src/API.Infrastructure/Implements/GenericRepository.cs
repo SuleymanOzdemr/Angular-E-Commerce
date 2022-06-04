@@ -62,5 +62,10 @@ namespace API.Infrastructure.Implements
         {
             _context.Set<T>().Remove(entity);
         }
+
+        public Task GetByIdAsync(object id)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

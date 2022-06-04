@@ -5,6 +5,6 @@
     "\\src\\API",
     "\\src\\API\\Controllers"
   ],
-  "SelectedNode": "\\src\\src.sln",
+  "SelectedNode": "\\src\\API\\Startup.cs",
   "PreviewInSolutionExplorer": false
 }

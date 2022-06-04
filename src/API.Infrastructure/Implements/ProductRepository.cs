@@ -3,6 +3,7 @@ using API.Core.Interfaces;
 using API.Infrastructure.DataContext;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace API.Infrastructure.Implements
@@ -10,6 +11,7 @@ namespace API.Infrastructure.Implements
     public class ProductRepository : IProductRepository
     {
         private readonly StoreContext _context;
+
         public ProductRepository(StoreContext context)
         {
             _context = context;
@@ -18,12 +20,13 @@ namespace API.Infrastructure.Implements
         public async Task<Product> GetProductByIdAsync(int id)
         {
             return await _context.Products
-                 .Include(p => p.ProductBrand)
-                 .Include(p => p.ProductType)
-                 .FirstOrDefaultAsync(p => p.Id == id);
+                .Include(p => p.ProductBrand)
+                .Include(p => p.ProductType)
+                .FirstOrDefaultAsync(p => p.Id == id);
         }
+
         /// <summary>
-        /// Tüm urunleri listeler
+        /// Tum Ürünleri Listeler
         /// </summary>
         /// <returns></returns>
         public async Task<IReadOnlyList<Product>> GetProductAsync()
@@ -39,9 +42,14 @@ namespace API.Infrastructure.Implements
             return await _context.ProductTypes.ToListAsync();
         }
 
-        public async Task<IReadOnlyList<ProductBrand>> GetProductBrandsAsync()
+        public async Task<IReadOnlyList<ProductBrand>> GetProductBrandAsync()
         {
-            return await _context.ProductBrand.ToListAsync();
+            return await _context.ProductBrands.ToListAsync();
+        }
+
+        public Task<IReadOnlyList<ProductBrand>> GetProductBrandsAsync()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

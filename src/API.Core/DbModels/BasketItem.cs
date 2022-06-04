@@ -6,6 +6,8 @@ namespace API.Core.DbModels
 {
     public class BasketItem : BaseEntity
     {
+        public int id;
+
         public string ProductName { get; set; }
         public decimal Price { get; set; }
         public int Quantity { get; set; }

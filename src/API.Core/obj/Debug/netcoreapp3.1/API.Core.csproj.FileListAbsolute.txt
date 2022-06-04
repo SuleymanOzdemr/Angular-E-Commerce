@@ -7,3 +7,4 @@ C:\Dosyalarım\E-Ticaret\src\API.Core\obj\Debug\netcoreapp3.1\API.Core.AssemblyI
 C:\Dosyalarım\E-Ticaret\src\API.Core\obj\Debug\netcoreapp3.1\API.Core.csproj.CoreCompileInputs.cache
 C:\Dosyalarım\E-Ticaret\src\API.Core\obj\Debug\netcoreapp3.1\API.Core.dll
 C:\Dosyalarım\E-Ticaret\src\API.Core\obj\Debug\netcoreapp3.1\API.Core.pdb
+C:\Dosyalarım\E-Ticaret\src\API.Core\obj\Debug\netcoreapp3.1\API.Core.csproj.AssemblyReference.cache

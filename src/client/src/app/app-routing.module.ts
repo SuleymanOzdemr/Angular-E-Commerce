@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BasketComponent } from './basket/basket.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { AuthGuard } from './core/guards/auth.guard';
 import { HomeComponent } from './home/home.component';
 import { ProductDetailsComponent } from './shop/product-details/product-details.component';
 import { ShopComponent } from './shop/shop.component';
@@ -31,6 +32,7 @@ import { ShopComponent } from './shop/shop.component';
     },
     {
       path: 'checkout',
+     // canDeactivate:[AuthGuard],
       loadChildren: () =>
         import('./checkout/checkout.module').then((mod) => mod.CheckoutModule),
       data: { breadcrumb: 'Checkout' },

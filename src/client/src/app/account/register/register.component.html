@@ -1,1 +1,27 @@
-<p>register works!</p>
+<div class="d-flex justify-content-center mt-5">
+    <div class="col-3">
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="form-signin">
+            <div class="text-center mb-4">
+                <h1 class="h3 mb-3 font-weight-normal">Kayıt Ol</h1>
+            </div>
+            <div class="form-label-group">
+                <label for="inputDisplayName" class="visually-hidden">Display Name</label>
+                <input formControlName="displayName" type="text" id="inputDisplayName" class="form-control" placeholder="Kullanıcı Adı gir" >
+            </div>
+            <br>
+            <div class="form-label-group">
+                <label for="inputEmail" class="visually-hidden">Email address</label>
+                <input formControlName="email" type="email" id="inputEmail" class="form-control" placeholder="Email adresi gir" >
+            </div>
+            <br>
+            
+            <div class="form-label-group">
+                <label for="inputPassword" class="visually-hidden">Password</label>
+                <input formControlName="password" type="password" id="inputPassword" class="form-control" placeholder="Şifre gir">
+            </div>
+            <br>
+            <button  class="w-100 btn btn-lg btn-primary" type="submit">Kayıt Ol</button>
+          </form>
+    </div>
+
+</div>

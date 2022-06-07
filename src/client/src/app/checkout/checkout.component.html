@@ -1,1 +1,24 @@
-<h1>Yalnızca Yetkisi olan kişiler girebilir.</h1>
+<div class="container mt 5">
+    <div class="row">
+        <div class="col-8">
+            <app-stepper [linearModeSelected]="false" #appStepper >
+                <cdk-step [label]="'Adres'">
+                    <app-checkout-address [checkoutForm]="checkoutForm" ></app-checkout-address>
+                </cdk-step>
+                <cdk-step [label]="'Teslimat'">
+                    <app-checkout-delivery   ></app-checkout-delivery>
+                </cdk-step>
+                <cdk-step [label]="'Gözden Geçir'">
+                    <app-checkout-review></app-checkout-review>
+                </cdk-step>
+                <cdk-step [label]="'Odeme'">
+                    <app-checkout-success  ></app-checkout-success>
+                </cdk-step>
+            </app-stepper>
+        </div>
+        <div class="col-4">
+            <app-order-details></app-order-details>
+        </div>
+    </div>
+
+</div>

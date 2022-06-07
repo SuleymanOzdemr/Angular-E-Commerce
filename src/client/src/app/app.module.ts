@@ -10,6 +10,8 @@ import { HomeModule } from './home/home.module';
 import { CommonModule } from '@angular/common';
 import { BasketModule } from './basket/basket.module';
 import { CheckoutModule } from './checkout/checkout.module';
+import { CdkStepperModule } from '@angular/cdk/stepper';
+import { Conctact2Module } from './conctact2/conctact2.module';
 
 
 
@@ -18,7 +20,6 @@ import { CheckoutModule } from './checkout/checkout.module';
     AppComponent,
   ],
   imports: [
-    CommonModule,
     BasketModule,
     BrowserModule,
     AppRoutingModule,
@@ -27,7 +28,8 @@ import { CheckoutModule } from './checkout/checkout.module';
     CoreModule,
     ShopModule,
     HomeModule,
-    
+    CommonModule,
+
     
 
   ],

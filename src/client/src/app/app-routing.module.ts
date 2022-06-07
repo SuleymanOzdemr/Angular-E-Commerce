@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AccountModule } from './account/account.module';
 import { BasketComponent } from './basket/basket.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { AuthGuard } from './core/guards/auth.guard';
@@ -43,8 +44,9 @@ import { ShopComponent } from './shop/shop.component';
         import('./account/account.module').then((mod) => mod.AccountModule),
       data: { breadcrumb: 'Account' },
     },
+     
  
- 
+   // { path: '**', redirectTo: '', pathMatch: 'full' },
 
   //tüm componentler için gerçekleştir (redirecTo) 
 ];
